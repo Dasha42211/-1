@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тур-агентство</title>
+    <style>
+        header{
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            padding:20px;
+            text-align:center;
+            font-size:20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        body{
+            color:rgb(0, 0, 0);
+            text-align: center;
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-size: 2000px 300px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(200, 226, 236);
+        }
+        .feature {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .feature-box {
+      background-color: rgb(200, 226, 236);
+      padding: 20px;
+      border-radius: 10px;
+      width: 100px;
+      height: 200px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .feature-title {
+      background-color: rgb(200, 226, 236);
+      padding: 20px;
+      border-radius: 10px;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .page-title {
+    text-align: center;
+  }
+  .slider-container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+  }
+  .prev-button {
+    left: 10px;
+  }
+  .next-button {
+    right: 10px;
+  }
+  fieldset {
+        width: 500px;
+        height: 250px;
+        text-align: center;
+      }
+      form {
+        width: 500px;
+        height: 500px;
+        margin:auto;
+        text-align: center;
+      }
+      .fon{
+    background-image: url("https://proprikol.ru/wp-content/uploads/2020/12/samolety-krasivye-kartinki-52.jpg");
+    background-position: center;
+    background-size: 1350px 750px;
+    background-repeat: no-repeat;
+    color:rgb(0, 0, 0);
+      }
+      footer {
+        position: center;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: rgb(209, 230, 243);
+        text-align: center;
+        padding: 20px 0;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .actions {
+    display: flex;
+    justify-content: space-between;
+    }
+.action {
+    width: 23%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.trust-section {
+    text-align: center;
+    padding: 20px;
+}
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.review {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.user-name {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.user-review {
+    font-style: italic;
+}
+.btn {
+    display: inline-block; 
+    background: #8C959D;
+    color: #fff; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 3px; 
+   }
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <a href="#actions">Акции</a>
+        <a href="#poisk">Поиск</a>
+        <a href="register.html">Личный кабинет</a>
+        <a href="#" style="float:left; margin-left: 20px; margin-right: 20px; margin-top: -11px; margin-bottom: -40px; "><img src="C:\Users\Вера\Downloads\media\media\logo.png" width="80" height="50"></a>
+    </nav>
+   </header>
+<div class="fon">
+  <br />
+  <br />
+  <br />
+   <h1>Авиакомпания «FlightPool»</h1>
+   <h3>Мы сближаем города, вы - живете там, где хотите</h3>
+   <br />
+   <br />
+   <br />
+</div>
+<br />
+<br />
+<div class="feature-title">
+    <h2>Принципы накопления бронирований</h2>
+    <p>Для осуществления перелета с целью снижения его стоимости</p>
+  </div>
+  <div class="feature">
+    <div class="feature-box">
+      <h2>20. 2001</h2>
+      <p>Выбор условной даты</p>
+    </div>
+    <div class="feature-box">
+      <h3>20000 тыс. раз</h3>
+      <p>Ввод числа бронирований</p>
+    </div>
+    <div class="feature-box">
+      <h2>2000</h2>
+      <p>Демонстрация изменения стоимости и вероятности вылета</p>
+    </div>
+  </div>
+  <h1> Наш парк самолетов и наша команда уже ждут вас!</h1>
+  <main>
+    <div class="slider-container">
+    <div class="slider">
+      <img src="C:\Users\Вера\Downloads\media\media\images\197152c818f021a2f4db244ec5328487.jpg" alt="">
+      <img src="C:\Users\Вера\Downloads\media\media\images\1-2.jpg" alt="">
+      <img src="C:\Users\Вера\Downloads\media\media\images\airline-staff-never-fat-British-Airways-711420.jpg" alt="">
+      <img src="C:\Users\Вера\Downloads\media\media\images\aircrafts\airbus.jpg" alt="">
+      <img src="C:\Users\Вера\Downloads\media\media\images\aircrafts\CRJ-200-interior.jpg" alt="">
+    </div>
+    <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+    <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+  </div>
+  </main>
+  <section id="poisk">
+  <h1 style="color:#000000">Поиск билетов</h1>
+  <form action="search.html">
+    <fieldset style="background-color: rgb(224, 245, 245);">
+      <label for="from">Откуда</label>
+    <select id="from" class="test-0-fd" required>
+        <option value="Москва">Москва</option>
+        <option value="Санкт-Петербург">Санкт-Петербург</option>
+        <option value="Новосибирск">Новосибирск</option>
+        <option value="Екатеринбург">Екатеринбург</option>
+    </select><br>
+<br />
+    <label for="to">Куда</label>
+    <select id="to" class="test-0-fa" required>
+        <option value="Москва">Москва</option>
+        <option value="Санкт-Петербург">Санкт-Петербург</option>
+        <option value="Екатеринбург">Екатеринбург</option>
+        <option value="Новосибирск">Новосибирск</option>
+    </select><br>
+<br />
+    <label for="departure">Дата вылета туда</label>
+    <input type="date" id="departure" class="test-0-fdt" required><br>
+<br />
+    <label for="return">Дата вылета обратно</label>
+    <input type="date" id="return" class="test-0-fat" required><br>
+<br />
+    <label for="passengers">Количество пассажиров (1-8)</label>
+    <input type="number" id="passengers" class="test-0-fnp" min="1" max="8" required><br>
+<br />
+    <button type="submit" class="test-0-fbs">Поиск билетов</button>
+</section>
+  </form>
+<section id="actions">
+  <h1>Наши акции!</h1>
+  <div class="actions">
+    <div class="action">
+        <img src="C:\Users\Вера\Downloads\media\media\images\promotions\promotion1.jpg" height="200" width="200" alt="Action 1" class="test-0-ai">
+        <h3 class="test-0-an">Возврат и замена Ваших билетов</h3>
+        <p class="test-0-ad">Пандемия изменила планы многих путешественников, но мы знаем, что это не продлится вечно. 
+          Когда все это закончится, мы продолжим исследовать этот мир так, как привыкли. 
+          Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить поездку
+          или отложить ее на более поздний срок.</p>
+    </div>
+
+    <div class="action">
+        <img src= "C:\Users\Вера\Downloads\media\media\images\promotions\promotion2.jpg" height="200" width="200" alt="Action 2" class="test-0-ai">
+        <h3 class="test-0-an">Лучшие предложения</h3>
+        <p class="test-0-ad">Снова увидеть улицы, которые были свидетелями столького. Обнять своих любимых и оглянуться назад, чтобы увидеть, через что вы прошли. И подумать о новых мечтах, которые будут такими особенными!</p>
+    </div>
+
+    <div class="action">
+        <img src="C:\Users\Вера\Downloads\media\media\images\promotions\promotion3.jpg" height="200" width="200" alt="Action 3" class="test-0-ai">
+        <h3 class="test-0-an">Будем видеться с тобой почаще</h3>
+        <p class="test-0-ad">С начала января мы расширяем географию полетов по России, чтобы вы могли
+          чаще видеться со своими близкими. Выбирайте нашу компанию, чтобы летать туда, где вас всегда ждут.</p>
+    </div>
+
+    <div class="action">
+        <img src= "C:\Users\Вера\Downloads\media\media\images\promotions\promotion4.jpg" height="200" width="200" alt="Action 4" class="test-0-ai">
+        <h3 class="test-0-an">Все снова в порядке</h3>
+        <p class="test-0-ad">С 10 августа мы возобновим полеты в Турцию. Рейсы из Москвы в Анталию будут выполняться дважды
+          в день ежедневно, а рейсы по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю.</p>
+    </div>
+</div>
+<br />
+<br />
+  <h1 text-allign="center">Подпишитесь на закрытые акции авиакомпании «FlightPool»</h1>
+  <form>
+    <input type="email" class="test-0-sie" placeholder="Введите ваш email" required>
+    <button type="submit" class="test-0-sbs">Подписаться</button>
+</form>
+</section>
+<section class="trust-section">
+  <h2>Отзывы пассажиров</h2>
+  <div class="reviews">
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt=User 1 class="user-avatar">
+          <h3 class="user-name">Иван Петров</h3>
+          <p class="user-review">Отличная компания, всегда вовремя и с улыбкой!</p>
+      </div>
+
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt="User 2" class="user-avatar">
+          <h3 class="user-name">Мария Сидорова</h3>
+          <p class="user-review">Быстро, комфортно, рекомендую!</p>
+      </div>
+
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt="User 3" class="user-avatar">
+          <h3 class="user-name">Алексей Иванов</h3>
+          <p class="user-review">Путешествие прошло без сучка и задоринки, спасибо!</p>
+      </div>
+
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt="User 4" class="user-avatar">
+          <h3 class="user-name">Екатерина Николаева</h3>
+          <p class="user-review">Отличный сервис, обязательно воспользуюсь еще раз.</p>
+      </div>
+
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt="User 5" class="user-avatar">
+          <h3 class="user-name">Павел Смирнов</h3>
+          <p class="user-review">Профессиональные водители, чистые машины, все отлично!</p>
+      </div>
+
+      <div class="review">
+          <img src="C:\Users\Вера\Downloads\smashicons.png" alt="User 6" class="user-avatar">
+          <h3 class="user-name">Ольга Козлова</h3>
+          <p class="user-review">Впечатления только положительные, рекомендую всем!</p>
+      </div>
+  </div>
+</section>
+<footer>КОНТАКТНАЯ ИНФОРМАЦИЯ:
+  <br />
+  Телефон: 8 (800) 100-10-10
+  <br />
+  Гобузова Дарья Антоновна
+  <br />
+  Home Login Sign up Contact News Return Feedback
+</footer>
+  <script> 
+    const slider = document.querySelector('.slider');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+  const slides = Array.from(slider.querySelectorAll('img'));
+  const slideCount = slides.length;
+  let slideIndex = 0;
+  
+  // Устанавливаем обработчики событий для кнопок
+  prevButton.addEventListener('click', showPreviousSlide);
+  nextButton.addEventListener('click', showNextSlide);
+  
+  // Функция для показа предыдущего слайда
+  function showPreviousSlide() {
+    slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+    updateSlider();
+  }
+  
+  // Функция для показа следующего слайда
+  function showNextSlide() {
+    slideIndex = (slideIndex + 1) % slideCount;
+    updateSlider();
+  }
+  
+  // Функция для обновления отображения слайдера
+  function updateSlider() {
+    slides.forEach((slide, index) => {
+      if (index === slideIndex) {
+        slide.style.display = 'block';
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+  }
+  // Инициализация слайдера
+  updateSlider();
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #9376fc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+body{
+    text-align: center;
+    background-color: rgb(117, 160, 218);
+}
+header{
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            padding:20px;
+            text-align:center;
+            font-size:20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+footer {
+        position: center;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: rgb(209, 230, 243);
+        text-align: center;
+        padding: 20px 0;
+        font-style: italic;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#actions">Акции</a>
+            <a href="#poisk">Поиск</a>
+            <a href="register.html">Личный кабинет</a>
+            <a href="#" style="float:left; margin-left: 20px; margin-right: 20px; margin-top: -11px; margin-bottom: -40px; "><img src="C:\Users\Вера\Downloads\media\media\logo.png" width="80" height="50"></a>
+        </nav>
+       </header>
+    <h1>Регистрация в личном кабинете</h1>Если вы уже зарегистрированы:<a href="login.html"><h1>Вход</h1></a>
+    <div class="form">
+        <form action="login.html">
+            <label for="name">Имя:</label><br>
+            <input type="text" id="name" class="test-2-name" required><br><br>
+
+            <label for="last">Фамилия:</label><br>
+            <input type="text" id="last" class="test-2-last" required><br><br>
+
+            <label for="doc">Номер документа:</label><br>
+            <input type="text" id="doc" class="test-2-doc" required><br><br>
+
+            <label for="phone">Телефон:</label><br>
+            <input type="tel" id="phone" class="test-2-phone" required><br><br>
+
+            <label for="pass">Пароль (не менее 7 символов, цифры и символы !, *, $):</label><br>
+            <input type="password" id="pass" class="test-2-pass" pattern="(?=.*\d)(?=.*[!*$]).{7,}" required><br><br>
+
+            <label for="pass2">Повторите пароль:</label><br>
+            <input type="password" id="pass2" class="test-2-pass2" required><br><br>
+
+            <button type="submit" class="test-2-btn">Зарегистрироваться</button>
+        </form>
+    </div>
+    <footer>КОНТАКТНАЯ ИНФОРМАЦИЯ:
+        <br />
+        Телефон: 8 (800) 100-10-10
+        <br />
+        Гобузова Дарья Антоновна
+        <br />
+        Home Login Sign up Contact News Return Feedback
+      </footer>
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+    const pass = document.getElementById('pass').value;
+    const pass2 = document.getElementById('pass2').value;
+
+    if (pass !== pass2) {
+        alert('Пароли не совпадают!');
+        event.preventDefault();
+    }
+});
+</script>
+</body>
+</html>
